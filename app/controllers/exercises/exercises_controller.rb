@@ -1,6 +1,6 @@
 module Exercises
   class ExercisesController < ApplicationController
-  	layout 'exercises'
+  	#layout 'exercises/exercises'
     
     def index
     end

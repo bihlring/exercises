@@ -1,8 +1,3 @@
-// Place all the styles related to the exercises controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 @mixin linear-gradient($value) {
 	background: -moz-linear-gradient($value);
 	background: -webkit-linear-gradient($value);
@@ -18,13 +13,13 @@
 	box-shadow: $value;
 }
 
+
 body#exercises {
 	table {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 0.85em;
 		tbody tr:hover td.has-activity, .has-activity {
 			background: #87ff8b;
-			#color: #0e0e0e;
 			font-weight: bold;
 		}
 	}
