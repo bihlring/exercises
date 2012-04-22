@@ -7,11 +7,11 @@ require "exercises/version"
 Gem::Specification.new do |s|
   s.name        = "exercises"
   s.version     = Exercises::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Exercises."
-  s.description = "TODO: Description of Exercises."
+  s.authors     = ["Anders Ring"]
+  s.email       = ["bihlring@gmail.com"]
+  s.homepage    = "http://www.railapps.se"
+  s.summary     = "Testing Rails engins."
+  s.description = "A test for rails engines on github."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
