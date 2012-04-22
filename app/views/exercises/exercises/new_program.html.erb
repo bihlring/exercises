@@ -1,0 +1,32 @@
+<% content_for :bg_image do %>
+	<style>
+		#main {
+			background: url(/assets/page-bg.png) 600px -80px no-repeat;
+		}
+	</style>
+<% end %>
+
+
+<div class="row">
+	<div class="span9">
+		<h1>Mina träningsprogram</h1>
+	</div>
+</div>
+
+		
+<div class="row">
+  <div class="span3"><%= image_tag "walking_1.jpg" %></div>
+  <div class="span6">
+  	<h3>Promenader - <span class="label label-success">Komma igång</span></h3>
+  	<p class="mediumFont">Välj ett startdatum för ditt träningsprogram för att komma igång.</p>
+  	<div class="input-append date" id="dp3" data-date="" data-date-format="yyyy-mm-dd">
+  		<label>Startdatum</label>
+  		<input class="span2" size="16" type="text" value="">
+  		<span class="add-on"><i class="icon-calendar"></i></span>
+  	</div>
+  </div>
+</div>
+		
+		
+
+

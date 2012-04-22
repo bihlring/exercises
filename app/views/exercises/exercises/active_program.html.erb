@@ -1,0 +1,76 @@
+<% content_for :bg_image do %>
+	<style>
+		#main {
+			background: url(/assets/page-bg.png) 600px -80px no-repeat;
+		}
+	</style>
+<% end %>
+
+
+<div class="row">
+	<div class="span9">
+		<h1>Promenaderss - <span class="">komma igångg</span></h1>
+	</div>
+</div>
+
+<div class="row">
+	<div class="span9 well" style="opacity:0.95">
+		<div class="row">
+			<%= render(:template => "/application/calendar") %>			
+
+			<div class="well info-box pull-right" style="width:440px;height:125px;">
+				<div class="progressWrapper">
+					<span class="progressLabel">Kaloribalans:</span>
+					<div id="kalorier" class="progress-box pull-right" style="width:300px;">
+						<span class="progress-bar-lbl" style="margin-right:223px">Mindre bra</span>
+						<span class="progress-bar-lbl">Bra</span>
+						<div class="progress progress-success">	
+					  	<div class="bar" style="width: 90%;"></div>
+						</div>			
+					</div>
+				</div>
+			
+				<div class="progressWrapper">
+					<span>Fettbalans:</span>
+					<div id="kalorier" class="progress-box pull-right" style="width:300px;">
+						<span class="progress-bar-lbl" style="margin-right:223px">Mindre bra</span>
+						<span class="progress-bar-lbl">Bra</span>
+						<div class="progress progress-danger">	
+					  	<div class="bar" style="width: 30%;"></div>
+						</div>			
+					</div>
+				</div>
+
+				<div class="progressWrapper">
+					<span>Kondition:</span>
+					<div id="kalorier" class="progress-box pull-right" style="width:300px;">
+						<span class="progress-bar-lbl" style="margin-right:223px">Mindre bra</span>
+						<span class="progress-bar-lbl">Bra</span>
+						<div class="progress progress-info">	
+					  	<div class="bar" style="width: 70%;"></div>
+						</div>			
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="well info-box">
+			<div class="row">
+				<div class="span2">
+					<span id="date">15</span> <span>april, 2012</span>
+					<p>9 dagar kvar</p>
+					<p class="mediumFont">Lägg till extra träning och justera mat till höger</p>
+				</div>
+				<div class="pull-right well" style="width:420px">
+					Här kommer möjlighet att justera träning och mat
+				</div>
+			</div>
+			<br/>
+		</div>
+	</div>
+</div>
+		
+		
+
+

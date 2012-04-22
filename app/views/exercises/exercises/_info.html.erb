@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="span3"><%= image_tag "walking_1.jpg" %></div>
+  <div class="span6">
+  	<h3>Promenader - <span class="label label-success">Komma igång</span></h3>
+  	<p class="mediumFont">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+  <div class="row">
+  	<div class="span7 offset3 pull-right">
+  		<p><%= link_to new_program_path, :class => "btn btn-success" do %><i class="icon-plus-sign"></i> Välj detta programm<% end %> <%= link_to "#promenader", :class => "btn btn-mini btn-info pull-right", data: {:toggle => :tab} do %><i class="icon-chevron-left icon-white"></i> Tillbaka<% end %></p>
+  	</div>
+  </div>
+</div>
+<table class="table table-bordered activities">
+  <thead>
+    <tr>
+    	<th>Vecka</th>
+      <th>Dag 1</th>
+      <th>Dag 2</th>
+      <th>Dag 3</th>
+      <th>Dag 4</th>
+      <th>Dag 5</th>
+      <th>Dag 6</th>
+      <th>Dag 7</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    	<td>1</td>
+      <td>Ledig</td>
+      <td class="has-activity">45 min</td>
+    	<td>Ledig</td>
+    	<td class="has-activity">30 min</td>
+    	<td>Ledig</td>
+    	<td>Ledig</td>
+    	<td class="has-activity">30 min</td>
+    </tr>
+    <tr>
+    	<td>2</td>
+      <td class="has-activity">30 min</td>
+      <td>Ledig</td>
+    	<td class="has-activity">45 min</td>
+    	<td>Ledig</td>
+    	<td>Ledig</td>
+    	<td class="has-activity">30 min</td>
+    	<td>Ledig</td>
+    </tr>
+    <tr>
+    	<td>3</td>
+      <td>Ledig</td>
+      <td class="has-activity">45 min</td>
+    	<td class="has-activity">30 min</td>
+    	<td>Ledig</td>
+    	<td class="has-activity">30 min</td>
+    	<td>Ledig</td>
+    	<td>Ledig</td>
+    </tr>
+    <tr>
+    	<td>4</td>
+      <td class="has-activity">45 min</td>
+      <td>Ledig</td>
+    	<td class="has-activity">30 min</td>
+    	<td>Ledig</td>
+    	<td class="has-activity">30 min</td>
+    	<td>Ledig</td>
+    	<td>Ledig</td>
+    </tr>
+  </tbody>
+</table>

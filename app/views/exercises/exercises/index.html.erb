@@ -1,2 +1,19 @@
-<h1>Exercises#index</h1>
-<p>Find me in app/views/exercises/exercises/index.html.erb</p>
+<% content_for :bg_image do %>
+	<style>
+		#main {
+			background: url(/assets/page-bg.png) 600px -80px no-repeat;
+		}
+	</style>
+<% end %>
+
+<div class="row">
+	<div class="span7">
+		<h1>Mina träningsprogram</h1>
+		<hr/>
+		<p>Du har inte något aktivt träningsprogram. Välj ett träningsprogram för att komma igång.</p>
+		<br/>
+		<p><%= link_to "Välj ett träningsprogramm", select_path, :class => "btn btn-primary offset2" %></p>
+		<br/>
+		<hr/>
+	</div>
+</div>

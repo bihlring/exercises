@@ -1,0 +1,177 @@
+<% content_for :bg_image do %>
+	<style>
+		#main {
+			background: url(/assets/page-bg.jpg) 600px -80px no-repeat;
+		}
+	</style>
+<% end %>
+
+
+<div class="row">
+	<div class="span9">
+		<h1>Välj träningsprogramm</h1>
+		<div class="btn-group">
+		  <button class="btn btn-large active">Lätt</button>
+		  <button class="btn btn-large">Medel</button>
+		  <button class="btn btn-large">Hård</button>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+  <div class="span10 first-tab">
+    <ul class="nav nav-tabs">
+    	<li class="active"><%= link_to "Promenader", "#promenader", data: {:toggle => :tab} %></li>
+    	<li><%= link_to "Stavgång", "#stavgang", data: {:toggle => :tab} %></li>
+    	<li><%= link_to "Jogging", "#jogging", data: {:toggle => :tab} %></li>
+    	<li><%= link_to "Simning", "#simning", data: {:toggle => :tab} %></li>
+    </ul>
+  	<div class="tab-content">
+  		<div class="tab-pane active fade in" id="promenader">
+				<div class="row">
+	  			<div class="span3 thumbnail"><%= image_tag "walking_1.jpg" %></div>
+	  			<div class="span6">
+	  				<h3>Promenader</h3>
+	  				<p class="mediumFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	  			</div>
+	  		</div>
+				<table class="table">
+	  		  <thead>
+	  		    <tr>
+	  		      <th>Mål</th>
+	  		      <th>Förklaring</th>
+	  		      <th></th>
+	  		    </tr>
+	  		  </thead>
+	  		  <tbody>
+	  		    <tr>
+	  		      <td><div class="label label-success">Komma igång</div></td>
+	  		      <td>Du går 3 gånger i veckan under 4 veckorrr. Lätt att komma igång och tar inte mycket tid.</td>
+	  		    	<td>
+	  		    		<%= link_to "#info", :class => "btn btn-mini btn-info", data: {:toggle => :tab} do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %>
+	  		    	</td>
+	  		    </tr>
+	  		    <tr>
+	  		      <td><div class="label label-warning">Minska i vikt</div></td>
+	  		      <td>Du går 5 gånger i veckan under 6 veckor. Anpassad mat för att minska i vikt.</td>
+	  		    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+	  		    </tr>
+	  		    <tr>
+	  		      <td><div class="label label-important">Bygg kondition</div></td>
+	  		      <td>Du går 7 gånger i veckan under 5 veckor. Lite snabbare tempo, pulsen ska gå upp.</td>
+	  		    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+	  		    </tr>
+	  		  </tbody>
+	  		</table>
+  		</div>
+  		<div id="info" class="tab-pane fade">
+  			<%= render(:partial => "info") %>
+  		</div>
+  		<div class="tab-pane fade" id="stavgang">
+				<div class="row">
+					<div class="span3 thumbnail"><%= image_tag "nordicwalking_1.jpg" %></div>
+					<div class="span6">
+						<h3>Stavgång</h3>
+						<p class="mediumFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th>Mål</th>
+				      <th>Förklaring</th>
+				      <th></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td><span class="label label-success">Komma igång</span></td>
+				      <td>Stavgång 1 timma 3 gånger i veckan under 4 veckor.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				    <tr>
+				      <td><span class="label label-warning">Minska i vikt</span></td>
+				      <td>Stavgång 1,5 timmar 3 gånger i veckan under 5 veckor. Anpassad mat för att minska i vikt.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				    <tr>
+				      <td><span class="label label-important">Bygg kondition</span></td>
+				      <td>Stavgång 2 timmar 4 gånger i veckan under 6 veckor.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				  </tbody>
+				</table>
+  		</div>
+  		<div class="tab-pane fade" id="jogging">
+				<div class="row">
+					<div class="span3 thumbnail"><%= image_tag "jogging_1.jpg" %></div>
+					<div class="span6">
+						<h3>Jogging</h3>
+						<p class="mediumFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th>Mål</th>
+				      <th>Förklaring</th>
+				      <th></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td><span class="label label-success">Komma igång</span></td>
+				      <td>Jogging 1 timma 3 gånger i veckan under 4 veckor.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				    <tr>
+				      <td><span class="label label-warning">Minska i vikt</span></td>
+				      <td>Jogging 1,5 timmar 3 gånger i veckan under 5 veckor. Anpassad mat för att minska i vikt.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				    <tr>
+				      <td><span class="label label-important">Bygg kondition</span></td>
+				      <td>Jogging 2 timmar 4 gånger i veckan under 5 veckor.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				  </tbody>
+				</table>
+  		</div>
+  		<div class="tab-pane fade" id="simning">
+				<div class="row">
+					<div class="span3 thumbnail"><%= image_tag "simning.jpeg" %></div>
+					<div class="span6">
+						<h3>Simning</h3>
+						<p class="mediumFont">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>
+				<table class="table">
+				  <thead>
+				    <tr>
+				      <th>Mål</th>
+				      <th>Förklaring</th>
+				      <th></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td><span class="label label-success">Komma igång</span></td>
+				      <td>Simning 1 timma 3 gånger i veckan under 4 veckor.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				    <tr>
+				      <td><span class="label label-warning">Minska i vikt</span></td>
+				      <td>Simning 1,5 timmar 3 gånger i veckan under 5 veckor. Anpassad mat för att minska i vikt.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				    <tr>
+				      <td><span class="label label-important">Bygg kondition</span></td>
+				      <td>Simning 2 timmar 4 gånger i veckan under 5 veckor.</td>
+				    	<td><%= link_to "#", :class => "btn btn-mini btn-info disabled" do %><i class="icon-info-sign icon-white"></i> Läs mer...<% end %></td>
+				    </tr>
+				  </tbody>
+				</table>
+  		</div>
+  	</div>
+  </div>
+</div>
